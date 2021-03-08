@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifestyle</title>
+    <title>BLOG - Lifestyle</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <header>
+        <div class="wrap-header">
+            <div class="logo"><img src="img/cube.png" alt=""></div>
+            <nav>
+                <ul>
+                    <li>World</li>
+                    <li>Sports</li>
+                    <li class="on">Lifestyle</li>
+                    <li>Business</li>
+                </ul>
+            </nav>
+            <div class="profile"><img src="img/profile.jpeg" alt=""></div>
+            <div class="btn-menu"></div>
+        </div>
+    </header>
+
+    <section class="wrap-grid">
+        <h2>Lifestyle.</h2>
+        <p class="desc">The latest and best lifestyle articles selected<br>by our editorial office.</p>
+        <div class="grid">
+            <div class="item item1">
+                <p class="cate">FOOD</p>
+                <p class="tit">Wake Up and Smell the Coffee</p>
+                <p class="price"><a href="#none">Read for $0.99</a></p>
+            </div>
+            <div class="item item2">
+                <p class="cate">ARCHITECTURE</p>
+                <p class="tit">The Brand New NASA Office</p>
+                <p class="price"><a href="#none">Read for $0.19</a></p>
+            </div>
+            <div class="item item3">
+                <p class="cate">TRAVEL</p>
+                <p class="tit">Experience the Saharan Sands</p>
+                <p class="price"><a href="#none">Read for $2.29</a></p>
+            </div>
+            <div class="item item4">
+                <p class="cate">INTERIOR</p>
+                <p class="tit">9 Air-Cleaning Plants Your Home Needs</p>
+                <p class="price"><a href="#none">Read for $0.09</a></p>
+            </div>
+            <div class="item item5">
+                <p class="cate">FOOD</p>
+                <p class="tit">One Month Sugar Detox</p>
+                <p class="price"><a href="#none">Read for $0.99</a></p>
+            </div>
+            <div class="item item6">
+                <p class="cate">PHOTOGRAPH</p>
+                <p class="tit">Shooting Minimal<br>Instagram Photos</p>
+                <p class="price"><a href="#none">Read for $0.29</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btnMenu = document.querySelector('.btn-menu');
+        const menu = document.querySelector('nav');
+
+        btnMenu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
